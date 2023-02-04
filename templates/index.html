@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Heart Disease Prediction </title>
+</head>
+
+
+<style>
+    body {
+      background-image: url("https://i.pinimg.com/originals/45/b5/fe/45b5febd01848ab9839b47c673b2194f.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;}
+    </style>
+
+<!-- <style>
+    h1 {text-align: center;}
+    h3 {text-align: center;}
+    form {text-align: center;}
+    label {text-align: center;}
+    </style> -->
+
+<body>
+
+    <h2 style="color:rgb(236, 63, 14);"> Heart Disease Prediction </h2>
+
+    <form method="POST" action = "/predict_disease">
+
+        <label>Age:</label>
+        <input type = "text" name = "age">
+        </select>
+
+        <br>
+        <br>
+            
+        <label>Gender:</label>
+        <Select name = "sex">
+            <option value = "0">0</option>
+            <option value = "1">1</option>
+        </Select>
+            
+        <br>
+        <br>
+
+        <label>CP:</label>
+        <Select name = "cp">
+            <option value = "0">0</option>
+            <option value = "1">1</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+        </Select>
+            
+        <br>
+        <br>
+            
+        <label>Trestbps:</label>
+        <input type = "text" name = "trestbps">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Cholesterol:</label>
+        <input type = "text" name = "chol">
+        </Select>
+            
+        <br>
+        <br>
+
+        <label>Fbs:</label>
+        <Select name = "fbs">
+            <option value = "0">0</option>
+            <option value = "1">1</option>
+        </Select>
+        
+            
+        <br>
+        <br>
+
+        <label>Restecg:</label>
+        <Select name = "restecg">
+            <option value = "0">0</option>
+            <option value = "1">1</option>
+            <option value = "2">2</option>
+        </Select>
+            
+        <br>
+        <br>
+
+        <label>Thalach:</label>
+        <input type = "text" name = "thalach">
+        </Select>
+            
+        <br>
+        <br>
+
+        <label>Exang:</label>
+        <Select name = "exang">
+            <option value = "0">0</option>
+            <option value = "1">1</option>
+        </Select>
+            
+        <br>
+        <br>
+
+        <label>Oldpeak:</label>
+        <input type = "text" name = "oldpeak">
+        </Select>
+            
+        <br>
+        <br>
+
+        <label>Slope:</label>
+        <Select name = "slope">
+            <option value = "0">0</option>
+            <option value = "1">1</option>
+            <option value = "2">2</option>
+        </Select>
+        <br>
+        <br>
+
+        <label>Ca:</label>
+        <Select name = "ca">
+            <option value = "0">0</option>
+            <option value = "1">1</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+        </Select>
+            
+        <br>
+        <br>
+
+        <label>Thal:</label>
+        <Select name = "thal">
+            <option value = "0">0</option>
+            <option value = "1">1</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+        </Select>
+            
+        <br>
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+        
+        <h4 > <strong style="background-color:hwb(118 58% 13%);">
+                Prediction of Heart Disease  is : <b > {{ prediction }} . </b></strong></h4>
+        
+    </form>
+
+        
+</body>
+</html>
